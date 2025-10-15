@@ -2,7 +2,7 @@
 
 ##  Como executar localmente com Docker
 
-Descreva os passos para subir a aplicação.
+Descreva os passos para subir a aplicação..
 
 ##  Pipeline CI/CD
 
