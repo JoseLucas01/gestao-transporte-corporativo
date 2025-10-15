@@ -1,26 +1,21 @@
-# Simple API Java
+# Projeto - Gestão de Transporte Corporativo
 
-Aplicação API 
+##  Como executar localmente com Docker
 
-## Pré-requisitos
+Descreva os passos para subir a aplicação.
 
-- Java 21
-- Git
-- Docker
+##  Pipeline CI/CD
 
-## Build e execução
+Explique as ferramentas utilizadas, as etapas do pipeline e seu funcionamento.
 
-```sh
-docker compose up --build
-```
+##  Containerização
 
-## Testes unitários (validaçãoo)
+Mostre o conteúdo do Dockerfile e as estratégias adotadas.
 
-./mvnw test
+##  Prints do funcionamento
 
+Inclua evidências (prints ou links) de execução, deploy e funcionamento em staging e produção.
 
-## Documentação online (OpenAPI)
+##  Tecnologias utilizadas
 
-http://localhost:8080/swagger-ui/index.html
-
-![](/assets/images/swagger.png)
+Liste as stacks, frameworks e ferramentas usadas.

@@ -21,4 +21,6 @@ public record UsuarioCadastroDto(
 
         UsuarioRole role
 ) {
+
+
 }

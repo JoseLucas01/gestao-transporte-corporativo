@@ -1,10 +1,7 @@
 package br.com.fiap.gestao_transporte_corporativo.service;
 
-import br.com.fiap.gestao_transporte_corporativo.dto.UsuarioCadastroDto;
-import br.com.fiap.gestao_transporte_corporativo.dto.UsuarioExibicaoDto;
-import br.com.fiap.gestao_transporte_corporativo.exception.UsuarioNaoEncontradoException;
-import br.com.fiap.gestao_transporte_corporativo.model.Usuario;
-import br.com.fiap.gestao_transporte_corporativo.repository.UsuarioRepository;
+import java.util.Optional;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -12,7 +9,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
+import br.com.fiap.gestao_transporte_corporativo.dto.UsuarioCadastroDto;
+import br.com.fiap.gestao_transporte_corporativo.dto.UsuarioExibicaoDto;
+import br.com.fiap.gestao_transporte_corporativo.exception.UsuarioNaoEncontradoException;
+import br.com.fiap.gestao_transporte_corporativo.model.Usuario;
+import br.com.fiap.gestao_transporte_corporativo.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
@@ -67,4 +68,5 @@ public class UsuarioService {
             throw new UsuarioNaoEncontradoException("Usuário não encontrado!");
         }
     }
+
 }
